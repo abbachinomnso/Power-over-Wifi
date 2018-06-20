@@ -1,0 +1,11 @@
+* FYP2
+D_D1         N00210 N00240 FYPDD 
+R_R1         N00190 N00206  50 TC=0,0 
+R_R2         0 N00240  15000 TC=0,0 
+L_L1         0 N00210  15n  
+C_C1         N00206 N00210  1.2p  TC=0,0 
+C_C2         0 N00240  1000p  TC=0,0 
+V_V1         N00190 0   PWL   
++ FILE "D:\FYP\Waveforms\wave_1_tone_10000000_band.csv" 
++  
+

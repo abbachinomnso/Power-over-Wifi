@@ -1,0 +1,50 @@
+
+**** 05/20/18 11:16:40 ******* PSpice Lite (March 2016) ******* ID# 10813 ****
+
+ ** Profile: "SCHEMATIC1-sweeprr"  [ f:\fyp2\fyp2-PSpiceFiles\SCHEMATIC1\sweeprr.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "sweeprr.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../fypd.lib" 
+* From [PSPICE NETLIST] section of C:\Users\abbac\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ns 0 
+.STEP LIN PARAM R_R1 1000 5000 1000 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FYP2
+C_C1         0 N39659  1000pF  TC=0,0 
+V_V1         N39655 0   PWL   
++ FILE "F:\FYP\Waveforms\wave_16_tone_10000000_band.csv" 
+R_R1         0 N39659  9000 TC=0,0 
+C_C2         N51278 N42280  0.13476pF  TC=0,0 
+L_L1         N42280 0  3.5779nH  
+D_D8         N42280 N39659 FYPDD 
+R_R13         N39655 N51278  50 TC=0,0 
+
+**** RESUMING sweeprr.cir ****
+.END
+
+
+ERROR(ORPSIM-15167): Undefined parameter: R_R1.
+

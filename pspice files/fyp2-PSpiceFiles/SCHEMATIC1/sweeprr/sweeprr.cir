@@ -1,0 +1,21 @@
+** Profile: "SCHEMATIC1-sweeprr"  [ f:\fyp2\fyp2-PSpiceFiles\SCHEMATIC1\sweeprr.sim ] 
+
+** Creating circuit file "sweeprr.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../fypd.lib" 
+* From [PSPICE NETLIST] section of C:\Users\abbac\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.2.0\PSpice.ini file:
+.lib "nomd.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ns 0 
+.STEP LIN PARAM R_R1 1000 5000 1000 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

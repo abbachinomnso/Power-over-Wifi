@@ -1,0 +1,11 @@
+* source FYP2
+R_R14         N155018 N155028  50 TC=0,0 
+L_L2         N155034 0  3.5779nH  
+C_C3         N155028 N155034  0.13476pF  TC=0,0 
+C_C4         0 N155052  1000pF  TC=0,0 
+D_D10         N155164 N155034 FYPDD 
+V_V2         N155018 0   PWL   
++ FILE "F:\FYP\Waveforms\wave_1_tone_10000000_band.csv" 
+R_R15         N155164 N155052  1000 TC=0,0 
+D_D9         N155034 N155052 FYPDD 
+C_C5         N155164 0  1n  TC=0,0 

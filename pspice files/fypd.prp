@@ -1,0 +1,22 @@
+("FYPDD"
+    ("Creator"	"Device property file created by Property Controller")
+    ("device_info"
+        ("SYMBOL_NAME"	"Diode")
+        ("MODEL_TYPE"	"22")
+    )
+    ("model_params"
+        ("level_0"
+        )
+    )
+    ("device_pre_smoke"
+        ("TERM_AN"	"1")
+        ("NODE_AN"	"1")
+        ("NODE_CAT"	"2")
+        ("DERATE_TYPE"	"DIODE")
+    )
+    ("device_max_ops"
+        ("VR"	"75")
+        ("PDM"	"500m")
+        ("TJ"	"200")
+    )
+)
